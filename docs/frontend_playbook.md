@@ -92,14 +92,15 @@
 </table>
 
 ##  هیروها و بازیکن‌ها
-بازی ما در این فاز **چهار نفره** است و هر نفر هیرو ثابت دارد. فعلاً Hero Powerها را پیاده‌سازی نمی‌کنیم؛ فقط پرتره و نام لازم است.
+بازی ما در این فاز **چهار نفره** است و در لابی اون چهار نفر باید هیروشونو انتخاب کنن.
+*
 
-|بازیکن|هیرو|توضیح|
-|---|---|---|
-|Player 1|Sylvanas Windrunner|هیرو اصلی UI؛ تصویرش در هدر نمایش داده می‌شود، **به‌هیچ‌وجه به‌عنوان مینیون پیاده‌سازی نشود**.|
-|Player 2|The Lich King|همیشه سمت راست Sylvanas در UI دو‌نفره.|
-|Player 3|Millhouse Manastorm|برای UI تست ۴ نفره در آینده؛ فعلاً در mock به صورت آف‌اسکرین.|
-|Player 4|Yogg-Saron|همین‌طور.|
+| Player   | Hero                | Power (Hero Ability)                                                                                                   |
+| -------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Player 1 | Sylvanas Windrunner | **Reclaimed Souls** (1 Gold) - Give +2/+1 to your minions that died last combat.                                       |
+| Player 2 | The Lich King       | **Reborn Rites** (1 Gold) - Give a friendly minion Reborn for the next combat only.                                    |
+| Player 3 | Millhouse Manastorm | **Manastorm** (Passive) - Minions cost 2 Gold. Refreshes cost 2 Gold. Start with 3 Gold. (Tavern upgrades cost 1 more) |
+| Player 4 | Yogg-Saron          | **Puzzle Box** (2 Gold) - Add a random minion from your current Tavern Tier to your hand.                              |
 
 <div align="center" style="display:flex; justify-content:center; gap:32px; flex-wrap:wrap; margin:16px 0;">
   <div style="text-align:center; width:160px;">

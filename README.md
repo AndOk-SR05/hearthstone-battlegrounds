@@ -135,8 +135,8 @@ git merge upstream/main      # با repo اصلی sync بشید
 
 **اگه اشتباهی کردید:**
 ```bash
-# تغییرات یه فایل رو undo کنید (قبل از commit و قبل از staging)
 git checkout -- filename.py
+# تغییرات یه فایل رو undo کنید (قبل از commit و قبل از staging)
 
 # فایل رو از staging area بیرون بیارید (Unstage کردن)
 git reset HEAD filename.py
@@ -214,8 +214,8 @@ https://github.com/YOUR-USERNAME/hearthstone-battlegrounds-1
 حالا باید repository رو به کامپیوتر خودتون clone کنید:
 
 ```bash
-# به پوشه‌ای که می‌خواید پروژه رو توش داشته باشید برید
 cd Desktop  # یا هر جای دیگه
+# به پوشه‌ای که می‌خواید پروژه رو توش داشته باشید برید
 
 # Repository خودتون رو clone کنید
 git clone https://github.com/YOUR-USERNAME/hearthstone-battlegrounds-1.git
@@ -231,8 +231,8 @@ cd hearthstone-battlegrounds-1
 برای اینکه بتونید تغییرات repository اصلی رو بگیرید (مثلاً اگه چیزی اضافه کردم)، باید upstream remote رو اضافه کنید:
 
 ```bash
-# upstream رو اضافه کنید
 git remote add upstream https://github.com/ORIGINAL-OWNER/hearthstone-battlegrounds-1.git
+# upstream رو اضافه کنید
 
 # بررسی کنید که درست اضافه شده
 git remote -v
@@ -249,8 +249,8 @@ git remote -v
 قبل از شروع هر کار جدید، این کار رو انجام بدید تا کدتون همیشه به‌روز باشه:
 
 ```bash
-# تغییرات repository اصلی رو بگیرید
 git fetch upstream
+# تغییرات repository اصلی رو بگیرید
 
 # به branch main برید
 git checkout main
@@ -279,8 +279,8 @@ git push origin main
 **مراحل ساخت:**
 
 ```bash
-# 1. اول مطمئن بشید روی main هستید
 git checkout main
+# 1. اول مطمئن بشید روی main هستید
 
 # 2. repository اصلی رو به‌روز کنید (مهم!)
 git fetch upstream
@@ -307,8 +307,8 @@ git push -u origin student-name
 **نحوه کار روی branch شخصی:**
 
 ```bash
-# همیشه اول چک کنید روی کدوم branch هستید
 git branch
+# همیشه اول چک کنید روی کدوم branch هستید
 
 # اگه روی branch دیگه‌ای هستید، برگردید به branch شخصی
 git checkout student-name
@@ -338,10 +338,11 @@ git push origin student-name
 ساده‌ترین راه اینه که یکی از اعضای تیم (مثلاً نفر اول) fork خودش رو به عنوان repository تیمی استفاده کنه:
 
 ```bash
-# نفر اول تیم این کارها رو انجام میده:
-# 1. به branch main بره
+
 git checkout main
 git pull origin main
+# نفر اول تیم این کارها رو انجام میده:
+# 1. به branch main بره
 
 # 2. branch تیمی رو بسازه
 git checkout -b team/robert  # نام تیم خودتون رو بذارید
@@ -364,8 +365,8 @@ git push -u origin team/robert
 بقیه اعضا باید remote رو اضافه کنن:
 
 ```bash
-# remote fork تیمی رو اضافه کنید
 git remote add team-fork https://github.com/TEAM-MEMBER-USERNAME/hearthstone-battlegrounds-1.git
+# remote fork تیمی رو اضافه کنید
 
 # بررسی کنید
 git remote -v
@@ -453,8 +454,8 @@ git checkout -b team/robert team-fork/team/robert  # branch تیمی رو local 
 
 **برای اعضای عادی تیم:**
 ```bash
-# 1. به branch شخصی خودتون برید
 git checkout student-name
+# 1. به branch شخصی خودتون برید
 
 # 2. کدهای branch تیمی رو بگیرید (اگه تیم چیزی تغییر داده)
 git pull team-fork team/robert
@@ -462,8 +463,8 @@ git pull team-fork team/robert
 
 **برای سرگروه (Team Lead):**
 ```bash
-# 1. به branch شخصی خودتون برید
 git checkout student-name
+# 1. به branch شخصی خودتون برید
 
 # 2. کدهای branch تیمی رو بگیرید (از origin استفاده کنید، نه team-fork)
 git pull origin team/robert
@@ -483,8 +484,8 @@ git checkout student-name
 
 **حین کار:**
 ```bash
-# 1. همیشه روی branch شخصی خودتون کار کنید
 git checkout student-name
+# 1. همیشه روی branch شخصی خودتون کار کنید
 
 # 2. کد بزنید و تغییرات بدید
 # ... کد زدن ...
@@ -508,8 +509,8 @@ git push origin student-name
 یه مثال کامل از workflow:
 
 ```bash
-# 1. صبح: شروع کار
 git checkout student-name
+# 1. صبح: شروع کار
 
 # 2. کدهای تیم رو sync کنید
 # نکته: اگر سرگروه هستید (صاحب مخزن تیمی)، به جای team-fork از origin استفاده کنید
@@ -535,8 +536,9 @@ git pull team-fork team/robert  # یا git pull origin team/robert اگر سرگ
 
 **همیشه روی branch شخصی کار کنید:**
 ```bash
-# قبل از شروع کار، چک کنید
 git branch
+# قبل از شروع کار، چک کنید
+
 # باید * student-name رو ببینید
 ```
 
